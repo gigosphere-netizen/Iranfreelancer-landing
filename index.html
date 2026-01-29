@@ -1,54 +1,43 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>IranFreelancer | Coming Soon</title>
-
-  <!-- Tailwind CDN -->
+  <title>IranFreelancer</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-white text-slate-800">
+<body class="bg-white">
+  <div class="min-h-screen flex items-center justify-center">
+    <div class="text-center px-6">
 
-  <div class="min-h-screen flex items-center justify-center px-6">
-    <div class="text-center max-w-md w-full">
-
-      <!-- Logo / Name -->
-      <h1 class="text-4xl font-bold text-slate-900 mb-3 animate-pulse">
+      <h1 class="text-4xl font-bold text-slate-900 mb-3">
         IranFreelancer
       </h1>
 
-      <!-- Tagline -->
       <p class="text-slate-500 mb-8">
         Iran’s Leading Freelance Marketplace
       </p>
 
-      <!-- Email Form -->
-      <form class="flex flex-col sm:flex-row gap-3">
-        <input 
-          type="email" 
+      <form class="flex flex-col sm:flex-row gap-3 justify-center">
+        <input
+          type="email"
           placeholder="Enter your email"
+          class="px-4 py-3 border rounded-lg focus:ring-2 focus:ring-teal-500"
           required
-          class="flex-1 px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-teal-500"
         />
-
-        <button 
-          type="submit"
-          class="px-6 py-3 rounded-lg bg-slate-900 text-white font-medium hover:bg-teal-600 transition"
+        <button
+          class="px-6 py-3 bg-slate-900 text-white rounded-lg hover:bg-teal-600 transition"
         >
           Get Early Access
         </button>
       </form>
 
-      <!-- Privacy -->
       <p class="text-xs text-slate-400 mt-4">
         Your email is safe with us.
       </p>
 
     </div>
   </div>
-
 </body>
 </html>
