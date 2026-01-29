@@ -1,79 +1,101 @@
-<div class="landing">
-  <div class="logo">IranFreelancer</div>
-  <p class="tagline">Join Iran's leading freelance marketplace</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IranFreelancer – Coming Soon</title>
+</head>
 
-  <form class="email-form" action="https://formspree.io/f/your-form-id" method="POST">
-    <input type="email" name="email" placeholder="Enter your email" required />
-    <button type="submit">Get Early Access</button>
-  </form>
+<body>
+  <div class="landing">
+    <div class="logo">IranFreelancer</div>
+    <p class="tagline">Iran’s Leading Freelance Marketplace</p>
 
-  <p class="privacy">Your email is safe with us.</p>
-</div>
+    <form class="email-form">
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Get Early Access</button>
+    </form>
 
-<style>
-  .landing {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    font-family: Arial, sans-serif;
-    background: #ffffff;
-    color: #0a2540;
-    text-align: center;
-    padding: 20px;
-    animation: fadeIn 1.2s ease-in;
-  }
+    <p class="privacy">Your email is safe with us.</p>
+  </div>
 
-  .logo {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 12px;
-    animation: pulse 2.5s ease-in-out infinite;
-  }
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #0a2540;
+    }
 
-  .tagline {
-    color: #6b7280;
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
+    .landing {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+      animation: fadeIn 1.2s ease-in;
+    }
 
-  .email-form {
-    display: flex;
-    gap: 10px;
-    max-width: 400px;
-    width: 100%;
-  }
+    .logo {
+      font-size: 38px;
+      font-weight: bold;
+      margin-bottom: 12px;
+      animation: pulse 2.5s infinite;
+    }
 
-  .email-form input[type="email"] {
-    flex: 1;
-    padding: 10px 14px;
-    border: 2px solid #0a2540;
-    border-radius: 6px;
-    font-size: 14px;
-  }
+    .tagline {
+      font-size: 16px;
+      color: #6b7280;
+      margin-bottom: 24px;
+    }
 
-  .email-form button {
-    padding: 10px 18px;
-    background-color: #0a2540;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
+    .email-form {
+      display: flex;
+      gap: 10px;
+      max-width: 400px;
+      width: 100%;
+    }
 
-  .email-form button:hover {
-    background-color: #009688; /* Accent color */
-  }
+    .email-form input {
+      flex: 1;
+      padding: 12px;
+      border: 2px solid #0a2540;
+      border-radius: 6px;
+      font-size: 14px;
+    }
 
-  .privacy {
-    font-size: 12px;
-    color: #6b7280;
-    margin-top: 10px;
-  }
+    .email-form button {
+      padding: 12px 20px;
+      background: #0a2540;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
 
-  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-  @keyframes pulse { 0% { opacity: 0.6; } 50% { opacity: 1; } 100% { opacity: 0.6; } }
-</style>
+    .email-form button:hover {
+      background: #009688;
+    }
+
+    .privacy {
+      font-size: 12px;
+      color: #6b7280;
+      margin-top: 12px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes pulse {
+      0% { opacity: 0.5; }
+      50% { opacity: 1; }
+      100% { opacity: 0.5; }
+    }
+  </style>
+</body>
+</html>
