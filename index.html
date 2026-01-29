@@ -1,101 +1,54 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>IranFreelancer – Coming Soon</title>
+  <title>IranFreelancer | Coming Soon</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-  <div class="landing">
-    <div class="logo">IranFreelancer</div>
-    <p class="tagline">Iran’s Leading Freelance Marketplace</p>
+<body class="bg-white text-slate-800">
 
-    <form class="email-form">
-      <input type="email" placeholder="Enter your email" required />
-      <button type="submit">Get Early Access</button>
-    </form>
+  <div class="min-h-screen flex items-center justify-center px-6">
+    <div class="text-center max-w-md w-full">
 
-    <p class="privacy">Your email is safe with us.</p>
+      <!-- Logo / Name -->
+      <h1 class="text-4xl font-bold text-slate-900 mb-3 animate-pulse">
+        IranFreelancer
+      </h1>
+
+      <!-- Tagline -->
+      <p class="text-slate-500 mb-8">
+        Iran’s Leading Freelance Marketplace
+      </p>
+
+      <!-- Email Form -->
+      <form class="flex flex-col sm:flex-row gap-3">
+        <input 
+          type="email" 
+          placeholder="Enter your email"
+          required
+          class="flex-1 px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-teal-500"
+        />
+
+        <button 
+          type="submit"
+          class="px-6 py-3 rounded-lg bg-slate-900 text-white font-medium hover:bg-teal-600 transition"
+        >
+          Get Early Access
+        </button>
+      </form>
+
+      <!-- Privacy -->
+      <p class="text-xs text-slate-400 mt-4">
+        Your email is safe with us.
+      </p>
+
+    </div>
   </div>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #ffffff;
-      color: #0a2540;
-    }
-
-    .landing {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-      padding: 20px;
-      animation: fadeIn 1.2s ease-in;
-    }
-
-    .logo {
-      font-size: 38px;
-      font-weight: bold;
-      margin-bottom: 12px;
-      animation: pulse 2.5s infinite;
-    }
-
-    .tagline {
-      font-size: 16px;
-      color: #6b7280;
-      margin-bottom: 24px;
-    }
-
-    .email-form {
-      display: flex;
-      gap: 10px;
-      max-width: 400px;
-      width: 100%;
-    }
-
-    .email-form input {
-      flex: 1;
-      padding: 12px;
-      border: 2px solid #0a2540;
-      border-radius: 6px;
-      font-size: 14px;
-    }
-
-    .email-form button {
-      padding: 12px 20px;
-      background: #0a2540;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .email-form button:hover {
-      background: #009688;
-    }
-
-    .privacy {
-      font-size: 12px;
-      color: #6b7280;
-      margin-top: 12px;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    @keyframes pulse {
-      0% { opacity: 0.5; }
-      50% { opacity: 1; }
-      100% { opacity: 0.5; }
-    }
-  </style>
 </body>
 </html>
